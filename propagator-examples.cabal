@@ -20,6 +20,7 @@ library
   exposed-modules:
     Data.Propagator.Example.AdderForward
     Data.Propagator.Example.AdderBackward
+    Data.Propagator.Example.AdderLift2
   -- other-modules:
   -- other-extensions:
   build-depends:       base >= 4.9, propagators
