@@ -5,8 +5,7 @@ mkDerivation {
   src = ./.;
   isLibrary = true;
   isExecutable = true;
-  libraryHaskellDepends = [ base ];
+  libraryHaskellDepends = [ base propagators ];
   executableHaskellDepends = [ base propagators ];
-  doHaddock = false;
   license = stdenv.lib.licenses.bsd3;
 }

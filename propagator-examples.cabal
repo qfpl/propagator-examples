@@ -17,7 +17,9 @@ maintainer:          george@wils.online
 extra-source-files:  CHANGELOG.md
 
 library
-  -- exposed-modules:
+  exposed-modules:
+    Data.Propagator.Example.AdderForward
+    Data.Propagator.Example.AdderBackward
   -- other-modules:
   -- other-extensions:
   build-depends:       base >= 4.9, propagators
@@ -28,6 +30,6 @@ executable propagator-examples
   main-is:             Main.hs
   -- other-modules:
   -- other-extensions:
-  build-depends:       base >= 4.9, propagators
-  hs-source-dirs:      src
+  build-depends:       base >= 4.9, propagators, propagator-examples
+  hs-source-dirs:      src-exe
   default-language:    Haskell2010
