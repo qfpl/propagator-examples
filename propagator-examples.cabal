@@ -21,6 +21,8 @@ library
     Data.Propagator.Example.AdderForward
     Data.Propagator.Example.AdderBackward
     Data.Propagator.Example.AdderLift2
+    Data.Propagator.Example.CtoF
+    Data.Propagator.Example.CtoFBidirectional
   -- other-modules:
   -- other-extensions:
   build-depends:       base >= 4.9, propagators

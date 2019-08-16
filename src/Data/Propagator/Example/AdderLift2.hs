@@ -21,7 +21,7 @@ lift2 f ca cb cc = do
   watch ca $ \a -> with cb $ \b -> write cc (f a b)
   watch cb $ \b -> with ca $ \a -> write cc (f a b)
 
-adder :: Cell s Int -> Cell s Int -> Cell s Int -> ST s ()
+adder :: Num a => Cell s a -> Cell s a -> Cell s a -> ST s ()
 adder a b c = do
   lift2 (+) a b c
   lift2 (-) c b a
