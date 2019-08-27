@@ -1,0 +1,7 @@
+packages: .
+
+source-repository-package
+  type: git
+  location: git@github.com:gwils/propagators.git
+  tag: 8a740731e95b22217c2f32cf96c36cdfda7cbb2b
+

@@ -7,9 +7,10 @@ import Data.Propagator.Example.AdderBackward (adderBackwardExample)
 import Data.Propagator.Example.AdderLift2 (adderLift2Example)
 import Data.Propagator.Example.CtoF (ctofExample)
 import Data.Propagator.Example.CtoFBidirectional (ctofBidirectionalExample)
+import Data.Propagator.Example.Sudoku4 (sudokuExample)
 import Control.Monad.ST (ST, runST)
 
-runNetwork :: Show a => (forall s . ST s (Maybe a)) -> IO ()
+runNetwork :: Show a => (forall s . ST s a) -> IO ()
 runNetwork st = print $ runST st
 
 main = do
@@ -18,3 +19,4 @@ main = do
   runNetwork adderLift2Example
   runNetwork ctofExample
   runNetwork ctofBidirectionalExample
+  runNetwork sudokuExample
