@@ -8,6 +8,7 @@ import Data.Propagator.Example.AdderLift2 (adderLift2Example)
 import Data.Propagator.Example.CtoF (ctofExample)
 import Data.Propagator.Example.CtoFBidirectional (ctofBidirectionalExample)
 import Data.Propagator.Example.Sudoku4 (sudokuExample)
+import Data.Propagator.Example.BuildingHeight (measureBuilding)
 import Control.Monad.ST (ST, runST)
 
 runNetwork :: Show a => (forall s . ST s a) -> IO ()
@@ -20,3 +21,4 @@ main = do
   runNetwork ctofExample
   runNetwork ctofBidirectionalExample
   runNetwork sudokuExample
+  runNetwork measureBuilding

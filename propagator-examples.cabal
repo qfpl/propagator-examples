@@ -24,9 +24,10 @@ library
     Data.Propagator.Example.CtoF
     Data.Propagator.Example.CtoFBidirectional
     Data.Propagator.Example.Sudoku4
+    Data.Propagator.Example.BuildingHeight
   -- other-modules:
   -- other-extensions:
-  build-depends:       base >= 4.9, propagators, containers
+  build-depends:       base >= 4.9, propagators, containers, intervals
   hs-source-dirs:      src
   default-language:    Haskell2010
 
